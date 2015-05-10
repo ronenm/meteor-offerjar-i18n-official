@@ -1,0 +1,37 @@
+Package.describe({
+  name: 'ronenm:offerjar-i18n-official',
+  version: '0.0.1',
+  // Brief, one-line summary of the package.
+  summary: '',
+  // URL to the Git repository containing the source code for this package.
+  git: '',
+  // By default, Meteor will default to using README.md for documentation.
+  // To avoid submitting documentation, set this field to null.
+  documentation: 'README.md'
+});
+
+Package.onUse(function(api) {
+  api.versionsFrom('1.1');
+  api.use("underscore");
+  api.use([
+    'blaze',
+    'spacebars',
+    'templating',
+  ], 'client');
+  api.use("tap:i18n@1.4.1");
+  api.use("ronenm:offerjar-api@0.0.1");
+  api.use("ronenm:offerjar-ui@0.0.1");
+  
+  // You must load your package's package-tap.i18n before you load any
+  // template
+  api.add_files("package-tap.i18n");
+  api.addFiles('offerjar-i18n-official.js');
+  api.add_files("i18n/en.i18n.json");
+  
+});
+
+Package.onTest(function(api) {
+  api.use('tinytest');
+  api.use('ronenm:offerjar-i18n-official');
+  api.addFiles('offerjar-i18n-official-tests.js');
+});
