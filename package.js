@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ronenm:offerjar-i18n-official',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'i18n translation to OfferJar negotiation',
   // URL to the Git repository containing the source code for this package.
@@ -19,8 +19,8 @@ Package.onUse(function(api) {
     'templating',
   ], 'client');
   api.use("tap:i18n@1.4.1");
-  api.use("ronenm:offerjar-api@0.0.1");
-  api.use("ronenm:offerjar-ui@0.0.1");
+  api.use("ronenm:offerjar-api@1.0.0");
+  api.use("ronenm:offerjar-ui@0.0.2");
   
   // You must load your package's package-tap.i18n before you load any
   // template
