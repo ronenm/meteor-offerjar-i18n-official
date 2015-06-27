@@ -3,8 +3,8 @@
   "online_negotiation_title": "Negotiation",
   "buy_offer_legend": "Retail price",
   "buy_saving_legend": "Your saving",
-  "buy_saving_offer": "Current offer",
-  "buy_last_offer": "Last offer",
+  "buy_saving_offer": "Our offer",
+  "buy_last_offer": "Our offer",
   "buy_your_bid_legend": "Your offer",
   "buy_waiting_for_response": "Offer sent. Waiting for seller's response",
   "negotiation_history_title": "History",
@@ -66,5 +66,6 @@
   "offer": "Make an offer",
   "offer_placeholder": "Your offer",
   "submit": "Submit",
-  "checkout_submitted": "Your checkout request has been submitted. Please wait till your browser will be redirected for completeling checkout process..."
+  "checkout_submitted": "Your checkout request has been submitted. Please wait till your browser will be redirected for completeling checkout process...",
+  "counter_below": "counter below"
 }
